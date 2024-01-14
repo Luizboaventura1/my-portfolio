@@ -2,8 +2,35 @@
   font-family: "Inter", sans-serif;
 }
 
-header {
-  background-image: linear-gradient(to top right, #101012, #141416);
+::-webkit-scrollbar {
+  background-color: #202024;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1776e3;
+}
+
+header main nav h1 {
+  color: #d8d8d8;
+  /* background: linear-gradient(to right,#0b89ef, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.icon-color {
+  background-color: #4f5357;
+  transition: 0.3s;
+}
+.icon-color:hover {
+  background-color: #60636a;
+}
+
+.cta-button {
+  transition: 0.3s;
+}
+.cta-button:hover {
+  box-shadow: 0 0 17px rgba(23, 118, 227, 0.4196078431);
 }
 
 /*# sourceMappingURL=style.css.map */

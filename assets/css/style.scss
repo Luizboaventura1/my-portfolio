@@ -1,7 +1,41 @@
 * {
-  font-family: 'Inter',sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: #202024;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1776e3;
 }
 
 header {
-  background-image: linear-gradient(to top right,#101012,#141416);
+  main {
+    nav {
+      h1 {
+        color: #d8d8d8;
+
+        /* background: linear-gradient(to right,#0b89ef, #00ccff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+      }
+    }
+  }
+}
+
+.icon-color {
+  background-color: #4f5357;
+  transition: 0.3s;
+  &:hover {
+    background-color: #60636a;
+  }
+}
+
+.cta-button {
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 0 17px #1776e36b;
+  }
 }

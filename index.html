@@ -9,7 +9,7 @@
     />
     <meta name="description" content="This is my portfolio" />
     <meta name="author" content="Luiz Boaventura" />
-    <meta name="theme-color" content="#101012">
+    <meta name="theme-color" content="#101012" />
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -18,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="shortcut icon"
+      href="assets/luizoutlier-logo.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -25,11 +30,239 @@
     <script src="tailwind.config.js"></script>
   </head>
   <body>
-    <header class="w-screen h-screen">
-      <div class="container px-4 mx-auto">
-
+    <header class="h-[90vh] md:h-[80vh] bg-darkoil-900 relative">
+      <div class="container px-4 mx-auto h-full">
+        <nav class="flex items-center h-[60px]">
+          <img src="assets/luizoutlier-logo.png" class="w-[30px] hidden sm:block" alt="Logo" />
+        </nav>
+        <main class="h-[calc(100%-60px)] flex items-center gap-4">
+          <nav class="max-w-3xl mx-auto">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="assets/luizoutlier-logo.png" class="w-[30px] h-[30px]" alt="">
+              <p class="font-medium text-zinc-300">Luiz Henrique</p>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-medium mb-3 leading-tight">
+              Landing pages de alta conversão
+            </h1>
+            <p class="text-sm md:text-base text-zinc-400 mb-4 font-medium pb-3">
+              Converta visitantes em leads, e leads em vendas! Faça seu
+              orçamento hoje!
+            </p>
+            <a href="https://wa.me/+5561992684938">
+              <button
+                class="cta-button flex items-center gap-3 font-medium px-5 py-3 rounded bg-bluerize text-white"
+              >
+                Fazer orçamento
+                <svg
+                  class="w-[17px] h-[17px] fill-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 492.004 492.004"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M382.678 226.804 163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"
+                      opacity="1"
+                      data-original="#000000"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+            </a>
+          </nav>
+        </main>
       </div>
     </header>
+    <section class="bg-darkoil-900 w-full benefits">
+      <div class="container px-4 mx-auto h-full">
+        <header class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-1">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            class="rounded-lg p-6 bg-darkoil-700 min-h-[250px] md:min-h-[350px] ring-1 ring-zinc-600 hover:ring-zinc-500"
+          >
+            <nav class="mb-6">
+              <svg
+                class="w-[40px] h-[40px] fill-bluerize"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M241 35.154c-57.822 3.319-112.046 25.788-155.327 64.361l66.936 66.936c25.19-20.971 55.776-33.644 88.391-36.624zM131.389 187.657l-66.935-66.935C25.848 163.991 3.351 218.219.011 276.055h94.677c3-32.621 15.7-63.21 36.701-88.398zM417.312 276.055h94.677c-3.34-57.836-25.836-112.064-64.443-155.333l-66.935 66.935c21.001 25.187 33.701 55.777 36.701 88.398zM417.291 306.055c-2.103 23.103-8.696 42.373-16.494 57.83a3988.607 3988.607 0 0 1 18.139 28.229c11.41 17.932 8.884 40.95-6.144 55.979a45.043 45.043 0 0 1-12.334 8.762l15.589 15.59a14.98 14.98 0 0 0 10.625 4.401c3.846 0 7.691-1.467 10.624-4.401 44.924-44.919 71.119-103.534 74.704-166.39zM94.71 306.055H0c3.585 62.856 29.78 121.471 74.703 166.391 2.934 2.934 6.779 4.401 10.624 4.401s7.691-1.468 10.625-4.401l45.512-45.515c5.867-5.868 5.867-15.382 0-21.25-11.877-11.877-41.794-45.129-46.754-99.626zM426.327 99.515C383.046 60.941 328.822 38.473 271 35.154v94.673c32.614 2.98 63.201 15.653 88.391 36.624zM289.33 257.977c-18.377-18.377-48.279-18.377-66.656 0s-18.377 48.279 0 66.656c23.216 23.216 137.311 96.066 150.245 104.296a15 15 0 0 0 20.708-20.708c-8.231-12.933-81.081-127.029-104.297-150.244z"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                </g>
+              </svg>
+            </nav>
+            <main>
+              <h1
+                class="font-medium text-4xl text-primary-text pb-4 leading-tight"
+              >
+                Acelere suas vendas
+              </h1>
+              <p class="text-zinc-400 font-medium">
+                Com estratégias qualificadas e testadas obtenha um
+                <strong>alto crescimento</strong> em menos tempo.
+              </p>
+            </main>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            class="rounded-lg p-6 bg-darkoil-700 min-h-[250px] md:min-h-[350px] ring-1 ring-zinc-600 hover:ring-zinc-500"
+          >
+            <nav class="mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 442.717 442.717"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="w-[40px] h-[40px] fill-bluerize"
+              >
+                <g>
+                  <path
+                    d="M139.648 174.987v-26.184c0-24.729-15.032-47.519-37.821-57.217 20.365-17.941 22.305-48.489 4.849-68.854C88.735 2.367 58.187.427 37.821 17.883c-22.305 19.396-22.305 54.308 0 73.703C15.032 101.284 0 124.074 0 148.803v26.184a8.692 8.692 0 0 0 8.728 8.728H130.92c4.849-.484 8.728-4.364 8.728-8.728zM69.339 22.732c17.456 0 32.003 14.062 32.003 31.518 0 17.941-14.547 32.003-32.003 32.003h-.485c-17.456 0-32.003-14.547-31.518-32.003s14.547-31.518 32.003-31.518zm53.338 143.527H16.001v-17.941c0-24.729 20.365-45.095 45.095-45.095h16.001c24.729 0 45.095 20.365 45.095 45.095zM147.407 208.445c-1.94 25.699 4.849 56.732 20.85 83.401l-84.371 83.886c-14.062 14.062-14.062 36.367 0 50.429s36.367 14.062 50.429 0l84.371-83.886c99.402 59.642 225.474-13.092 224.019-128.011 0-81.462-69.824-150.316-154.68-145.952-76.128 3.394-137.224 64.005-140.618 140.133zm278.326 5.818c1.455 104.251-115.404 168.742-203.654 110.07-3.394-2.424-7.758-1.94-10.668.97l-88.735 88.735c-7.273 7.273-18.911 7.273-26.184 0s-7.273-18.911 0-26.184l88.735-89.22c2.909-2.909 3.394-7.273.97-10.668-16.486-24.729-23.76-53.823-21.82-79.037 3.394-72.249 64.975-127.526 136.739-124.132 70.795 3.395 124.617 62.552 124.617 129.466z"
+                    opacity="1"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M294.813 99.345c-61.581 0-112.01 48.004-115.889 109.1-3.879 67.4 49.459 122.677 115.889 122.677 64.49 0 115.889-52.368 115.889-115.889 0-63.035-50.429-115.404-115.889-115.888zm.485 215.291c-23.76 0-44.125-7.273-60.611-19.88 7.273-32.973 39.761-53.823 72.734-47.034 23.275 4.849 41.701 23.275 47.034 46.549-18.426 13.091-36.367 19.88-59.157 20.365zm-37.821-122.677c0-20.365 16.971-37.337 37.337-37.337s37.337 16.486 37.337 36.852c0 26.184-26.184 44.125-50.913 34.912-14.064-5.334-23.761-18.911-23.761-34.427zm111.039 89.704c-7.273-20.365-22.305-36.852-42.185-45.58 24.245-17.456 30.063-51.398 12.607-75.643s-51.398-30.063-75.643-12.607c-30.548 21.82-30.548 66.43 0 88.25-19.88 8.728-34.912 25.214-42.185 45.58-17.941-19.88-26.669-46.065-25.214-71.764 3.394-52.368 46.549-93.584 98.918-93.584 54.793 0 99.402 44.125 99.402 98.918-.485 23.76-8.728 47.52-25.7 66.43z"
+                    opacity="1"
+                    data-original="#000000"
+                  ></path>
+                </g>
+              </svg>
+            </nav>
+            <main>
+              <h1
+                class="font-medium text-4xl text-primary-text pb-4 leading-tight"
+              >
+                Gere leads qualificados
+              </h1>
+              <p class="text-zinc-400 font-medium">
+                Chega de leads desqualificados, aumente já suas conversões com
+                uma
+                <strong>copy persuasiva.</strong>
+              </p>
+            </main>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            class="rounded-lg p-6 bg-darkoil-700 min-h-[250px] md:min-h-[350px] ring-1 ring-zinc-600 hover:ring-zinc-500"
+          >
+            <nav class="mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="w-[40px] h-[40px] fill-bluerize"
+              >
+                <g>
+                  <path
+                    d="M477.6 38.3c-.4-1.8-1.8-3.2-3.5-3.7-58.6-14.3-193.9 36.7-267.2 110-13.1 13-25 27.1-35.6 42.1-22.6-2-45.2-.3-64.5 8.1-54.4 23.9-70.2 86.4-74.7 113.2-.9 5.2 2.6 10.2 7.9 11.1.9.1 1.8.2 2.7.1l87.3-9.6c.1 6.6.5 13.2 1.2 19.7.4 4.5 2.5 8.8 5.7 12l33.8 33.7c3.2 3.2 7.5 5.3 12 5.7 6.5.7 13 1.1 19.6 1.2l-9.6 87.2c-.6 5.3 3.3 10.1 8.6 10.6.9.1 1.8.1 2.6-.1 26.8-4.3 89.4-20.1 113.2-74.5 8.4-19.3 10.1-41.8 8.2-64.3 15.1-10.6 29.2-22.6 42.2-35.6C441 232.1 491.7 99.8 477.6 38.3zM361.9 217.9c-18.7 18.7-49.1 18.8-67.8 0-18.8-18.7-18.8-49.1 0-67.9 18.7-18.8 49.1-18.8 67.9 0 18.7 18.8 18.7 49.2-.1 67.9z"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                  <path
+                    d="M168.4 399.4c-5.5 5.5-14.3 7.6-24.9 9.5-23.8 4-44.8-16.5-40.5-40.5 1.6-9.1 6.5-21.9 9.5-24.9 1.7-1.7 1.8-4.5.1-6.2-1-1-2.3-1.5-3.7-1.3-13.3 1.6-25.7 7.7-35.1 17.1C50.2 376.7 48 464 48 464s87.4-2.2 110.9-25.8c9.5-9.5 15.5-21.8 17.1-35.2.4-4.1-4.7-6.6-7.6-3.6z"
+                    opacity="1"
+                    data-original="#000000"
+                    class=""
+                  ></path>
+                </g>
+              </svg>
+            </nav>
+            <main>
+              <h1
+                class="font-medium text-4xl text-primary-text pb-4 leading-tight"
+              >
+                Alavanque seu potencial de escalabilidade
+              </h1>
+              <p class="text-zinc-400 font-medium">
+                Com um tráfego bem direcionado, nossas landing pages atraem <strong>altas taxas de conversão</strong> a curto e longo prazo.
+              </p>
+            </main>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section class="py-8 bg-darkoil-900">
+      <div class="container mx-auto px-4">
+        <header class="grid grid-cols-1 md:grid-cols-2 gap-7">
+          <div>
+            <p class="text-zinc-300 font-medium text-xl mb-4">Entrega em até 3 dias!</p>
+            <hr class="my-3 border-zinc-700">
+            <h1 class="font-bold text-primary-text text-4xl mb-4">Veja alguns dos nossos serviços</h1>
+            <p class="text-zinc-400 mb-6">Cresça seus resultados com uma landing page profissional.</p>
+            <a href="https://wa.me/+5561992684938">
+              <button
+                class="cta-button flex items-center gap-3 font-medium px-5 py-3 rounded bg-bluerize text-white"
+              >
+                Fazer orçamento
+                <svg
+                  class="w-[17px] h-[17px] fill-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 492.004 492.004"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M382.678 226.804 163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"
+                      opacity="1"
+                      data-original="#000000"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <div>
+            <ul class="grid gap-y-2 py-5">
+              <li class="flex items-center gap-3 p-4 text-zinc-300 bg-darkoil-700 rounded-lg transition-all duration-500 ring-1 ring-transparent hover:ring-zinc-700">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="fill-bluerize w-[30px] h-[30px]"><g><path d="M21.634 47.186c-1.893-2.126-3.422-4.206-4.899-6.22a35.467 35.467 0 0 1-3.494-5.845c-.61-1.248-.88-2.51.441-3.323 3.787-2.327 4.563-.105 6.62 2.473 1.22 1.528 3.02 4.047 4.147 5.639 1.077 1.52 2.39-1.223 2.913-1.998 1.863-2.75 6.703-9.486 8.704-11.975 1.899-2.364 8.028-8.985 9.17-10.038.973-.897 3.027-2.863 4.408-1.778 1.45 1.14 2.16 3.307 1.14 4.716-1.777 2.453-4.567 4.786-6.498 7.122-3.908 4.728-7.608 9.824-11.16 14.899-1.207 1.724-2.901 4.612-3.953 6.482-1.968 3.499-3.696 4.164-7.54-.154z" opacity="1" data-original="#000000" class=""></path></g></svg>
+                Página de vendas</li>
+              <li class="flex items-center gap-3 p-4 text-zinc-300 bg-darkoil-700 rounded-lg transition-all duration-500 ring-1 ring-transparent hover:ring-zinc-700">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="fill-bluerize w-[30px] h-[30px]"><g><path d="M21.634 47.186c-1.893-2.126-3.422-4.206-4.899-6.22a35.467 35.467 0 0 1-3.494-5.845c-.61-1.248-.88-2.51.441-3.323 3.787-2.327 4.563-.105 6.62 2.473 1.22 1.528 3.02 4.047 4.147 5.639 1.077 1.52 2.39-1.223 2.913-1.998 1.863-2.75 6.703-9.486 8.704-11.975 1.899-2.364 8.028-8.985 9.17-10.038.973-.897 3.027-2.863 4.408-1.778 1.45 1.14 2.16 3.307 1.14 4.716-1.777 2.453-4.567 4.786-6.498 7.122-3.908 4.728-7.608 9.824-11.16 14.899-1.207 1.724-2.901 4.612-3.953 6.482-1.968 3.499-3.696 4.164-7.54-.154z" opacity="1" data-original="#000000" class=""></path></g></svg>
+                Captação de Leads</li>
+              <li class="flex items-center gap-3 p-4 text-zinc-300 bg-darkoil-700 rounded-lg transition-all duration-500 ring-1 ring-transparent hover:ring-zinc-700">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="fill-bluerize w-[30px] h-[30px]"><g><path d="M21.634 47.186c-1.893-2.126-3.422-4.206-4.899-6.22a35.467 35.467 0 0 1-3.494-5.845c-.61-1.248-.88-2.51.441-3.323 3.787-2.327 4.563-.105 6.62 2.473 1.22 1.528 3.02 4.047 4.147 5.639 1.077 1.52 2.39-1.223 2.913-1.998 1.863-2.75 6.703-9.486 8.704-11.975 1.899-2.364 8.028-8.985 9.17-10.038.973-.897 3.027-2.863 4.408-1.778 1.45 1.14 2.16 3.307 1.14 4.716-1.777 2.453-4.567 4.786-6.498 7.122-3.908 4.728-7.608 9.824-11.16 14.899-1.207 1.724-2.901 4.612-3.953 6.482-1.968 3.499-3.696 4.164-7.54-.154z" opacity="1" data-original="#000000" class=""></path></g></svg>
+                Página de obrigado</li>
+              <li class="flex items-center gap-3 p-4 text-zinc-300 bg-darkoil-700 rounded-lg transition-all duration-500 ring-1 ring-transparent hover:ring-zinc-700">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="fill-bluerize w-[30px] h-[30px]"><g><path d="M21.634 47.186c-1.893-2.126-3.422-4.206-4.899-6.22a35.467 35.467 0 0 1-3.494-5.845c-.61-1.248-.88-2.51.441-3.323 3.787-2.327 4.563-.105 6.62 2.473 1.22 1.528 3.02 4.047 4.147 5.639 1.077 1.52 2.39-1.223 2.913-1.998 1.863-2.75 6.703-9.486 8.704-11.975 1.899-2.364 8.028-8.985 9.17-10.038.973-.897 3.027-2.863 4.408-1.778 1.45 1.14 2.16 3.307 1.14 4.716-1.777 2.453-4.567 4.786-6.498 7.122-3.908 4.728-7.608 9.824-11.16 14.899-1.207 1.724-2.901 4.612-3.953 6.482-1.968 3.499-3.696 4.164-7.54-.154z" opacity="1" data-original="#000000" class=""></path></g></svg>
+                Página de lançamento</li>
+              <li class="flex items-center gap-3 p-4 text-zinc-300 bg-darkoil-700 rounded-lg transition-all duration-500 ring-1 ring-transparent hover:ring-zinc-700">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="fill-bluerize w-[30px] h-[30px]"><g><path d="M21.634 47.186c-1.893-2.126-3.422-4.206-4.899-6.22a35.467 35.467 0 0 1-3.494-5.845c-.61-1.248-.88-2.51.441-3.323 3.787-2.327 4.563-.105 6.62 2.473 1.22 1.528 3.02 4.047 4.147 5.639 1.077 1.52 2.39-1.223 2.913-1.998 1.863-2.75 6.703-9.486 8.704-11.975 1.899-2.364 8.028-8.985 9.17-10.038.973-.897 3.027-2.863 4.408-1.778 1.45 1.14 2.16 3.307 1.14 4.716-1.777 2.453-4.567 4.786-6.498 7.122-3.908 4.728-7.608 9.824-11.16 14.899-1.207 1.724-2.901 4.612-3.953 6.482-1.968 3.499-3.696 4.164-7.54-.154z" opacity="1" data-original="#000000" class=""></path></g></svg>
+                Página de captura</li>
+            </ul>
+            <p class="text-zinc-300 font-medium">Entre outras...</p>
+          </div>
+        </header>
+      </div>
+    </section>
+
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-HRF66X148K"
